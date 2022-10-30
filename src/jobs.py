@@ -1,3 +1,4 @@
+import csv
 from functools import lru_cache
 
 
@@ -15,4 +16,12 @@ def read(path):
     list
         List of rows as dicts
     """
-    return []
+    try:
+        with open(path, encoding="utf-8") as csv_jobs:
+            jobs_reader = csv.DictReader(
+                csv_jobs, delimiter=",", quotechar='"'
+            )
+            jobs_list = list(jobs_reader)
+            return jobs_list
+    except FileExistsError:
+        print("File does not exist")

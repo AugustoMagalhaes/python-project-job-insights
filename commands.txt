@@ -1,1 +1,8 @@
 source .venv/bin/activate
+
+$ python3 -m pytest
+
+python3 -m pytest tests/nomedoarquivo.py::test_nome_do_teste
+
+python3 -m pytest tests/test_jobs.py::test_nome_do_teste
+
