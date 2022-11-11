@@ -103,7 +103,7 @@ def get_max_salary(path):
     for job in data:
         if job["max_salary"].isnumeric():
             all_max_salaries.append(int(job["max_salary"]))
-    
+
     max_salary = sorted(all_max_salaries, reverse=True)[0]
     return max_salary
 
@@ -128,7 +128,7 @@ def get_min_salary(path):
     for job in data:
         if job["min_salary"].isnumeric():
             all_min_salaries.append(int(job["min_salary"]))
-    
+
     min_salary = sorted(all_min_salaries)[0]
     return min_salary
 
