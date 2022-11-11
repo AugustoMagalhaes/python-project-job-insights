@@ -5,3 +5,8 @@ $ python3 -m pytest
 python3 -m pytest tests/nomedoarquivo.py::test_nome_do_teste
 
 python3 -m pytest tests/test_jobs.py
+
+python3 -m flake8
+
+
+python3 -m pytest tests/test_insights.py::
