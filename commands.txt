@@ -9,4 +9,4 @@ python3 -m pytest tests/test_jobs.py
 python3 -m flake8
 
 
-python3 -m pytest tests/test_insights.py::
+python3 -m pytest tests/sorting/test_sorting.py::test_sort_by_criteria

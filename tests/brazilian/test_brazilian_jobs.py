@@ -10,4 +10,3 @@ def test_brazilian_jobs():
         assert "salario" not in job.keys()
         assert "type" in job.keys()
         assert "tipo" not in job.keys()
-    pass
